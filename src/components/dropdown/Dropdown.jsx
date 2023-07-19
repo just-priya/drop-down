@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -19,17 +18,20 @@ const BasicMenu = ()=> {
 
   return (
     <div>
-      
-     <svg  id="basic-button"
+      <div>
+        <svg  id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.1} strokeHeight={0.1} stroke="currentColor" width="50px" height="50px" className="w-6 h-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"  width="100px" height="100px"/>
   </svg>
+      </div>
+     
 
     
       <Menu
+      sx={{ m: 1, minWidth: 80 }}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}

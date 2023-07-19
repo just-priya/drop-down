@@ -1,11 +1,14 @@
 
 import './App.css';
-import BasicMenu from './components/dropdown/Dropdown.jsx';
+import Img from './components/img-test/Img.jsx';
+// import BasicMenu from './components/dropdown/Dropdown.jsx';
 
 function App() {
   return (
     <div className="App">
-   <BasicMenu/>
+   {/* <BasicMenu/> */}
+<Img/>
+
     </div>
   );
 }
